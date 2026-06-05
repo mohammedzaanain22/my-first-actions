@@ -1,0 +1,20 @@
+name: My Hello Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello Message
+        run: echo "Hello from GitHub Actions!"
+
+      - name: Print Today's Date
+        run: date
+
+      - name: Print Student Name
+        run: echo "mohammedzaanain22"
